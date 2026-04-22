@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Brand Thinking & Beyond</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .page-header {
+            padding-top: 200px;
+            padding-bottom: 80px;
+            background: var(--bg-darker);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .portfolio-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            height: 100%;
+        }
+
+        .portfolio-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portfolio-content {
+            padding: 3rem 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .portfolio-client {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .portfolio-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            line-height: 1.2;
+        }
+
+        .portfolio-brief {
+            color: var(--text-secondary);
+            font-size: 1.15rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .portfolio-credits {
+            font-size: 0.85rem;
+            color: var(--text-primary);
+            font-weight: 500;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            padding-top: 1.5rem;
+            margin-top: auto;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-content {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="BTB Logo passive.jpeg" alt="BTB Logo" class="brand-logo me-2">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="who-we-are.html">Who We Are</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#approach">Approach</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-contact ms-lg-3" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="page-header text-center">
+        <div class="container reveal-fade">
+            <span class="sub-heading tracking-wide">CASE STUDIES</span>
+            <h1 class="section-title mt-3"><span style="font-size: 1.3em; font-weight: 800;">Our</span><br><span class="text-gradient">Portfolio.</span></h1>
+            <p class="lead-text mt-4 mx-auto" style="max-width: 600px;">A collection of campaigns and strategies that drove real-world impact.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section class="section-padding dark-section">
+        <div class="container">
+            <div class="row g-5">
+                
+                <!-- Project 1 -->
+                <div class="col-lg-12 scroll-reveal">
+                    <div class="portfolio-card row g-0">
+                        <div class="col-md-5">
+                            <img src="images/project1.jpg" alt="Curios, the carnival" class="portfolio-image">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="portfolio-content">
+                                <div>
+                                    <div class="portfolio-client">Pain and Palliative Care Society</div>
+                                    <h3 class="portfolio-title">Curios, the carnival</h3>
+                                    <p class="portfolio-brief">Initiated a socially inclusive 3-day palliative care carnival for IPM. Through a highly targeted, multi-tiered campaign, the event raised significant funds, attracted 1,700+ volunteers, and achieved an annual footfall of up to 40,000.</p>
+                                </div>
+                                <div class="portfolio-credits">
+                                    <strong>Credits:</strong> Co-founder | IP development | Branding & Strategy
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-12 scroll-reveal">
+                    <div class="portfolio-card row g-0 flex-md-row-reverse">
+                        <div class="col-md-5">
+                            <img src="images/project2.jpg" alt="21 Vayassil Life Set" class="portfolio-image">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="portfolio-content">
+                                <div>
+                                    <div class="portfolio-client">IIC Lakshya</div>
+                                    <h3 class="portfolio-title">21 വയസ്സിൽ life സെറ്റ്</h3>
+                                    <p class="portfolio-brief">Developed a finely budgeted 360° campaign featuring Mohanlal to demystify success for a younger audience. The mastercopy organically embedded itself in local pop culture, resulting in 100M+ impressions and multifold growth in brand valuation and admissions.</p>
+                                </div>
+                                <div class="portfolio-credits">
+                                    <strong>Credits:</strong> Campaign Direction | Copywriting | Photoshoot direction
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-12 scroll-reveal">
+                    <div class="portfolio-card row g-0">
+                        <div class="col-md-5">
+                            <img src="images/project3.jpg" alt="Forever, For everyone" class="portfolio-image">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="portfolio-content">
+                                <div>
+                                    <div class="portfolio-client">Shobhika Weddings</div>
+                                    <h3 class="portfolio-title">Forever, For everyone</h3>
+                                    <p class="portfolio-brief">Directed Kerala's first socially inclusive integrated campaign, advocating for a diverse customer base. By featuring eight models in varied attires within an emotional framework, the campaign generated over 2 million digital impressions and earned widespread PR.</p>
+                                </div>
+                                <div class="portfolio-credits">
+                                    <strong>Credits:</strong> Campaign Direction | Copywriting | Creative direction
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-lg-12 scroll-reveal">
+                    <div class="portfolio-card row g-0 flex-md-row-reverse">
+                        <div class="col-md-5">
+                            <img src="images/project4.jpg" alt="Kaikorkkam Kaithariye Samrakshikkam" class="portfolio-image">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="portfolio-content">
+                                <div>
+                                    <div class="portfolio-client">Khaaz - The signature boutique</div>
+                                    <h3 class="portfolio-title">കൈകോർക്കാം കൈത്തറിയെ സംരക്ഷിക്കാം</h3>
+                                    <p class="portfolio-brief">Launched an emotionally-driven video campaign on National Handloom Day to revitalize a struggling community of traditional weavers. Shared by over 100 influential figures, the initiative garnered 20 million views and met all sales targets.</p>
+                                </div>
+                                <div class="portfolio-credits">
+                                    <strong>Credits:</strong> Campaign Direction | Copywriting | Ad film production
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-lg-12 scroll-reveal">
+                    <div class="portfolio-card row g-0">
+                        <div class="col-md-5">
+                            <img src="images/project5.jpg" alt="Yathrakal GoKite-n Oppam" class="portfolio-image">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="portfolio-content">
+                                <div>
+                                    <div class="portfolio-client">GoKite Tours & Travels</div>
+                                    <h3 class="portfolio-title">യാത്രകൾ GoKiteന് ഒപ്പം</h3>
+                                    <p class="portfolio-brief">Executed a viral 360° behavioral shift campaign to aggressively establish brand presence across Kerala within six months. Leveraging celebrity ambassadors and movie-style release strategies, the effort reached 100 million users and generated over 5,000 leads.</p>
+                                </div>
+                                <div class="portfolio-credits">
+                                    <strong>Credits:</strong> Creative Strategy | Ad film Production
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section id="contact" class="cta-section text-center section-padding position-relative darker-section">
+        <div class="container scroll-reveal">
+            <img src="BTB Logo passive.jpeg" alt="BTB Mark" class="passive-logo mb-4">
+            <h2 class="section-title mb-4">Ready to elevate your brand?</h2>
+            <p class="lead-text mb-5 mx-auto" style="max-width: 600px;">Let's build a strategy that translates into real-world impact.</p>
+            <a href="mailto:strategicallybtb@gmail.com" class="btn btn-premium btn-lg">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container text-center">
+            <div class="mb-4">
+                <img src="BTB Logo passive.jpeg" alt="BTB Logo" class="footer-logo filter-grayscale opacity-75">
+            </div>
+            <p class="mb-0 text-muted small">&copy; 2026 Brand Thinking & Beyond.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
